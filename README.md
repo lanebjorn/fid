@@ -1,2 +1,1 @@
-# fid
-This repo is for DIG2500 Fundamentals of Interactive Design.
+# This repo is for DIG2500 Fundamentals of Interactive Design.
