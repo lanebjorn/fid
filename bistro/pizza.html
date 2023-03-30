@@ -15,25 +15,29 @@
     h2 {font-family: Verdana, Geneva, sans-serif; font-size: 1em;color:#d1633c; font-size: 1em;}
     small {color: #999;}
     ol, ul { list-style-type: none;}
-   <style type="text/css"></style>
+   <style type="text/css">
+   </style>
 </head>
 
 <body>
 
 <h1>Blackstone Bistro | Pizza-on-Demand</h1>
-<form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
 <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
-</form>
+<form action="http://www.blackgoosebistro.com/pizza.php" method="post">
 
 <fieldset>  <legend><h2>Your Information</h2></legend>  
 <ul>   
   <li>
-   <input type="text" name="customername" id="form-name">
+<label for="form-name">Name:</label>
+<input type="text" name="customername" id="form-name">
   <li>Address:<input type="text" name ="address"></li>
   <li>Telephone Number:<input type ="text" name="cel"></li>
   <li>Email:<input type="text"name ="email"></li>
-<li>Delivery instructions:<br><textarea name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea></li></fieldset>
-<br>
+<li>Delivery instructions:<br><textarea name="instructions" rows="4" cols="60"maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
+</fieldset></li>
+  <br>
+</ul>
+
 <h2>Design your dream pizza:</h2>
 
 <fieldset>
@@ -41,7 +45,7 @@
   <fieldset>
     <legend>Crust <em>(Choose one)</em>:</legend>
     <ul>
-      <li><label><input type="radio" name="crust" value="white"> Classic white</label>>>
+      <li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
       <li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
       <li><label><input type="radio" name="crust" value="cheese crust"> Cheese-stuffed crust</label></li>
       <li><label><input type="radio" name="crust" value="gluten free"> Gluten-free</label></li>
@@ -60,13 +64,27 @@
       <li><label><input type="checkbox" name="toppings[]" value="anchovies"> Anchovies</label></li>
     </ul>
   </fieldset>
+  <fieldset>
+  <legend>Number</legend>
+  <p>How many pizzas: 
+  <select name="pizzas" size="1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+  </select>
+  </p>
+  </fieldset>
 
-<fieldset>
-<legend>Number</legend>
-<p>How many pizzas:<select name="pizzas" size="1">
-<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></p>
 </fieldset> <!-- closes 'Pizza Specs' fieldset -->
-  <p><input type="submit" value="Bring me a pizza!">
-    <input type="reset"></p>
+
+<p><input type="submit" value="Bring me a pizza!">
+<input type="reset"></p>
+
+</form>
+
 </body>
 </html>
+
