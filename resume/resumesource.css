@@ -1,8 +1,10 @@
 @charset "UTF-8";
-body {font-family: 'Roboto', sans-serif;}
-h1, h2, h3 {font-family: 'Roboto', sans-serif;}
-p {font-family: 'Roboto', sans-serif;}
+body {font-family: 'Roboto', sans-serif; color:black; font-size:16px}
+h1, h2, h3 {font-family: 'Roboto', sans-serif; color:black; font-weight: bold;}
+p {font-family: 'Roboto', sans-serif;line-height: 1.5; margin-bottom: 20px;}
 a {font-family: 'Roboto', sans-serif;}
+img { max-width: 200%; height: 200; border: 1px solid black; margin: 10px;}
 body {background-color: #dfdfdf;}
 a:link {color: #a9aa8a; background-color: transparent; text-decoration: none;}
 a:visited {color: #848469; background-color: transparent; text-decoration: none;}
+a:hover {color:#d5d6a1}
